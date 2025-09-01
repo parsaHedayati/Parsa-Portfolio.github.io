@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsa Hedayati | Electrical Engineer & Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<header class="sticky-top header-bar">
+    <div class="container-fluid d-flex justify-content-between align-items-center py-3 px-4">
+        <div class="d-flex align-items-center">
+            <img class="profile-pic" src="Parsa_animated.png" alt="Parsa Hedayati's animated profile picture">
+            <a href="#" class="name-link ms-3">Parsa Hedayati <br> <span>Electrical Engineer / Passionate Web Developer</span></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="about" class="about-section container py-5">
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <p class="lead mb-4">
+                Hi, I’m Parsa Hedayati — a passionate web developer and engineering student with a strong interest in building innovative digital and robotic solutions.
+            </p>
+            <p>
+                I specialize in **PHP development**, with experience in OOP design patterns, and SQL. I have a solid foundation in front-end technologies like HTML, CSS, and JavaScript. Currently pursuing a Master’s degree in Adaptronics, I’ve combined my engineering knowledge with software development through projects such as designing a fully functional quadruped robot using ROS 2.
+            </p>
+            <p>
+                This hands-on experience has strengthened my problem-solving mindset and ability to work across both hardware and software systems. I'm eager to contribute my skills to real-world projects and collaborate with teams to create efficient, user-friendly, and scalable solutions. When I’m not coding, you’ll find me learning new technologies, experimenting with robotics, or pushing my limits at the gym.
+            </p>
+            <p>Alongside my technical expertise, I bring valuable experience from my background in sales and customer relations. Having worked as a travel consultant and as a salesperson in the maritime supply industry, I developed strong communication, negotiation, and client management skills. This experience taught me how to understand customer needs, provide tailored solutions, and build long-term professional relationships—abilities that translate well into collaborating with clients and teams in a development environment.</p>
+        </div>
+        <div class="about-image d-none d-lg-block">
+            <img src="generated_Gif.gif" alt="Generated Gif of a robot arm" class="img-fluid rounded-3 shadow">
+        </div>
+    </section>
+
+    ---
+
+    <section id="projects" class="container py-5">
+        <h2 class="section-title text-center mb-5">Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100 project-card shadow">
+                    <img src="Product Managment.png" class="card-img-top project-gif" alt="Expense Tracker Screen-Shot">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Product Management Web App</h5>
+                        <p class="card-text">
+                            Developed a dynamic inventory management application using a secure PHP-MySQL backend. Implemented conditional UI logic for product-specific data entry and validated user inputs to ensure data integrity.
+                        </p>
+                        <a class="source-code" href="https://github.com/parsaHedayati/Product-managment-website">Source Code</a>
+                        <ul class="list-unstyled list-inline text-muted mt-3">
+                            <li class="list-inline-item me-3"><small>PHP</small></li>
+                            <li class="list-inline-item me-3"><small>MySQL</small></li>
+                            <li class="list-inline-item"><small>HTML/CSS</small></li>
+                            <li class="list-inline-item"><small>JavaScript</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 project-card shadow">
+                    <img src="spider_gif.gif" class="card-img-top project-gif" alt="GIF of a quadruped robot">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Quadruped Robot Control System</h5>
+                        <p class="card-text">
+                            Designed and implemented a fully functional quadruped robot using **ROS 2** and **micro-ROS** on ESP32. Developed control algorithms for stable movement and integrated real-time sensor data for precise navigation and operation.
+                        </p>
+                        <a class="source-code" href="https://github.com/parsaHedayati/Robot">Source Code</a>
+                        <ul class="list-unstyled list-inline text-muted mt-3">
+                            <li class="list-inline-item me-3"><small>ROS 2</small></li>
+                            <li class="list-inline-item me-3"><small>Micro-ROS</small></li>
+                            <li class="list-inline-item me-3"><small>C++</small></li>
+                            <li class="list-inline-item"><small>ESP32</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 project-card shadow">
+                    <img src="Expense Tracker.png" class="card-img-top project-gif" alt="Expense Tracker Screen-Shot">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Expense Tracker Website</h5>
+                        <p class="card-text">
+                            Built a full-stack **Expense Tracker website** with a secure user authentication system and a user-friendly interface for managing financial transactions. The application allows users to add, view, and categorize expenses, providing a clear overview of their spending habits.
+                        </p>
+                        <a class="source-code" href="https://github.com/parsaHedayati/expense-tracker">Source Code</a>
+                        <ul class="list-unstyled list-inline text-muted mt-3">
+                            <li class="list-inline-item me-3"><small>PHP</small></li>
+                            <li class="list-inline-item me-3"><small>MySQL</small></li>
+                            <li class="list-inline-item me-3"><small>OOP</small></li>
+                            <li class="list-inline-item"><small>HTML/CSS</small></li>
+                            <li class="list-inline-item"><small>JavaScript</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="experience" class="container py-5">
+        <h2 class="section-title text-center mb-5">Experience</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100 experience-card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Robotics Research Assistant</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Riga Technical University, 2024-2025</h6>
+                        <ul class="card-text">
+                            <li>Contributed to the development of a quadruped robot control system.</li>
+                            <li>Programmed microcontrollers for real-time sensor data processing.</li>
+                            <li>Assisted in testing and debugging hardware-software integrations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 experience-card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Sales Representative</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">ManSang Co. Ltd, 2024</h6>
+                        <ul class="card-text">
+                            <li>Managed B2B sales, providing essential ship supplies to international clients under tight schedules.</li>
+                            <li>Built and maintained strong client relationships, ensuring trust and long-term cooperation.</li>
+                            <li>Coordinated logistics and timely delivery of products, optimizing efficiency and minimizing delays.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 experience-card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Sales Representative</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">ITN, 2022-2023</h6>
+                        <ul class="card-text">
+                            <li>Advised clients on tailored travel packages, ensuring customer satisfaction and repeat business.</li>
+                            <li>Negotiated with suppliers to secure competitive pricing and added value for clients.</li>
+                            <li>Consistently exceeded monthly sales targets through effective upselling and cross-selling strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="container py-5">
+        <h2 class="section-title text-center mb-5">Education</h2>
+        <div class="card education-card mx-auto shadow">
+            <div class="card-body">
+                <h5 class="card-title">Bachelor of Science in Adaptronics</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Riga Technical University, 2019-2025</h6>
+                <p class="card-text mt-3">
+                    Focused on robotics, control systems, and software engineering. Relevant coursework included Embedded Systems, Control Theory, and Web Development.
+                </p>
+            </div>
+        </div>
+        <div class="card education-card mx-auto shadow">
+            <div class="card-body">
+                <h5 class="card-title">Master’s of Science in Adaptronics</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Riga Technical University, 2025 - Present</h6>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container py-5">
+        <h2 class="section-title text-center mb-5">Skills</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge rounded-pill bg-primary p-2">PHP</span>
+            <span class="badge rounded-pill bg-primary p-2">HTML/CSS</span>
+            <span class="badge rounded-pill bg-primary p-2">JavaScript</span>
+            <span class="badge rounded-pill bg-primary p-2">SQL</span>
+            <span class="badge rounded-pill bg-primary p-2">ROS 2</span>
+            <span class="badge rounded-pill bg-primary p-2">Micro-ROS</span>
+            <span class="badge rounded-pill bg-primary p-2">ESP32</span>
+            <span class="badge rounded-pill bg-primary p-2">OOP Design Patterns</span>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

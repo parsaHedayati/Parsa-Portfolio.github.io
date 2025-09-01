@@ -1,0 +1,195 @@
+/* -------------------- General & Body Styling -------------------- */
+body {
+    background-color: #121212; /* A deeper, more modern dark background */
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif; /* A more modern font */
+    margin: 0;
+    padding: 0;
+}
+
+h2.section-title {
+    color: #4b89f5; /* A vibrant blue for titles */
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+h2.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: #4b89f5;
+    border-radius: 2px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* -------------------- Header Section -------------------- */
+.header-bar {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #4b89f5;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(75, 137, 245, 0.3);
+}
+
+.name-link {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.name-link span {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    font-weight: normal;
+}
+
+.nav-link {
+    color: #e0e0e0 !important;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #4b89f5 !important;
+    transform: translateY(-2px);
+}
+
+/* -------------------- About Section -------------------- */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-image img {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Adjust size */
+}
+
+/* -------------------- Card-based Sections (Projects, Experience) -------------------- */
+.project-card,
+.experience-card,
+.education-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover,
+.experience-card:hover,
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.project-gif {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
+}
+
+.card-title {
+    font-weight: 600;
+    color: #4b89f5 !important;
+}
+
+.card-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-text ul li::before {
+    content: "•";
+    color: #4b89f5;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+a.source-code{
+    text-decoration: none;
+    color: #a88888;
+
+}
+
+a.source-code:hover{
+    text-decoration: none;
+    color: #4b89f5;
+
+}
+
+/* -------------------- Skills Section -------------------- */
+.badge {
+    background-color: #4b89f5;
+    color: #fff;
+    font-weight: normal;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem !important;
+}
+
+/* -------------------- Responsive Design -------------------- */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-image {
+        display: none !important; /* Hide image on smaller screens */
+    }
+
+    .header-bar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-link {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+
+    .name-link span {
+        font-size: 0.8rem;
+    }
+
+    .navbar-toggler {
+        align-self: flex-end;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+}
