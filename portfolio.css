@@ -94,7 +94,8 @@ p {
 /* -------------------- Card-based Sections (Projects, Experience) -------------------- */
 .project-card,
 .experience-card,
-.education-card {
+.education-card,
+.certificates-card {
     background-color: #1e1e1e;
     border: 1px solid #333;
     border-radius: 12px;
@@ -106,7 +107,8 @@ p {
 
 .project-card:hover,
 .experience-card:hover,
-.education-card:hover {
+.education-card:hover,
+.certificates-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
@@ -135,13 +137,13 @@ p {
     width: 1em;
     margin-left: -1em;
 }
-a.source-code{
+a.source-code, h6 > a{
     text-decoration: none;
     color: #a88888;
 
 }
 
-a.source-code:hover{
+a.source-code:hover, h6 > a:hover{
     text-decoration: none;
     color: #4b89f5;
 
